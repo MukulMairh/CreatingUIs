@@ -6,6 +6,9 @@ import { UI1Component } from './ui1/ui1.component';
 import { UI2Component } from './ui2/ui2.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

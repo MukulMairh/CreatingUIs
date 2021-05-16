@@ -1,116 +1,109 @@
-.cardCSS2 {
-  height: 75vh;
-  width: 75ch;
+.example-card {
+  width: 75%;
+  height: 75%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
-.inputFields {
-  width: 70%;
-  left: 30%;
-  margin-left: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border: none;
-  border-bottom: 2px solid grey;
-  height: 40px;
-}
-.inputFields :focus {
-  border: none;
+.txt-blue {
+  color: #047bd5;
+  font-family: Bookman;
 }
 
-.signInbtn {
-  left: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-.button {
-  position: absolute;
-  //   top: 50%;
-}
-.backColor {
-  //   background-color: #d1e8e2;
-  background-color: #047bd5;
-  background-repeat: no-repeat;
-
+.back-blue {
+  background: #047bd5;
   height: 100%;
 }
-.imageCss {
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-bottom: 2%;
+.txt-color-white {
+  color: white;
 }
-.alignSelfCenter {
-  align-self: center;
+
+mat-grid-tile {
+  margin: 0px;
 }
-.bottom-class {
+.top {
+  top: 0;
+  margin-bottom: 150%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.image-css {
+  width: 94%;
+}
+.posBottom {
   bottom: 0;
+  position: absolute;
+  width: 35%;
+  margin-bottom: 5px;
 }
-.center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 75vh;
-  width: 75ch;
-  margin-top: -37.5vh; /*set to a negative number 1/2 of your height*/
-  margin-left: -37.5ch; /*set to a negative number 1/2 of your width*/
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  .dont-show {
+    display: none;
+  }
 }
-.color-blue {
+.fontFamily {
+  font-family: Bookman;
+}
+.margin-all-zero {
+  left: 0;
+  right: 0;
+}
+.fontSize {
+  font-size: medium;
+}
+
+.input-field {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+input:invalid {
+  outline: 0;
+  // color: #ff2300;
+  //   border-color: #ff2300;
+}
+input:focus,
+input:valid {
+  border-color: #047bd5;
+}
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 14px;
+  top: -24px;
   color: #047bd5;
 }
-.btn-Center {
-  margin-left: 30%;
-}
-.color-grey {
-  color: rgb(170, 170, 170);
-}
-.loginbtn {
-  border-color: #fb641b;
-  background-color: white;
-  color: #fb641b;
-  width: 75%;
-  transition: 0.8s;
-}
-.loginbtn :hover {
-  background-color: #fb641b;
-  color: white;
-}
 
-.button {
-  background-color: #fb641b;
-  border: none;
-  color: white;
-  text-align: center;
-  transition-duration: 0.4s;
-  width: 30%;
-  margin-left: 18%;
-}
-
-.button1 {
-  background-color: white;
-  color: black;
-  border: 1px solid #fb641b;
-}
-
-.button1:hover {
-  background-color: #fb641b;
-  color: white;
-}
-
-.button4 {
-  background-color: white;
-  color: black;
-  border: 1px solid #047bd5;
-}
-
-.button4:hover {
-  background-color: #047bd5;
-  color: white;
-}
-
-@media screen and (max-width: 480px) {
-  div.hidn {
+@media only screen and (min-width: 599px) {
+  .dont-show2 {
     display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .show-to-full {
+    width: 100%;
+    height: 100%;
   }
 }
